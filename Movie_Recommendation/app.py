@@ -4,7 +4,7 @@ from tmdbv3api import Movie, TMDb
 
 movie = Movie()
 tmdb = TMDb()
-tmdb.api_key = 'bb4e9b80596cb7071340f951f69125c8' # api키 노출을 피하고자 했습니다. TMDB 접속후 api키를 받아 입력 후 사용
+tmdb.api_key = 'bb4e9b80596cb7071340f951f69125c8'
 tmdb.language = 'ko-KR'
 
 def get_recommendations(title):
@@ -40,9 +40,10 @@ def get_recommendations(title):
         titles.append(details['title'])
 
     return images, titles
-    
-movies = pickle.load(open('movies.pickle', 'rb'))
-cosine_sim = pickle.load(open('cosine_sim.pickle', 'rb'))
+
+# 가져올 영화 추천 데이터
+movies = pickle.load(open('movies.pickle', 'rb')) # 용량 문제로 gitignore
+cosine_sim = pickle.load(open('cosine_sim.pickle', 'rb')) # 용량 문제로 gitignore
 
 st.set_page_config(layout='wide')
 st.header('Nadoflix')
