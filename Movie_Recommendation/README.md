@@ -6,5 +6,5 @@
 ### pip install streamlit
 ### pip install tmdbv3api
 
-## 실향
+## 실행
 ### streamlit run app.py
