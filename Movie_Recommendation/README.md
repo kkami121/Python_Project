@@ -1,6 +1,10 @@
 # Python_Project
-- 파이썬 프로젝트
-- 영화 추천 웹사이트
+## 영화추천 웹서비스
 
-## 1주차
+### TMDB API 사용(영화추천 사이트)
+## 설치
+### pip install streamlit
+### pip install tmdbv3api
 
+## 실향
+### streamlit run app.py
