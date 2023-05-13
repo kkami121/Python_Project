@@ -1,5 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./Chat GPT/snowboy/examples/Python3"
-    ]
-}
